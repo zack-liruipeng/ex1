@@ -1,0 +1,21 @@
+﻿@model ex1.VidewModels.RandomMovieViewModel
+
+@{
+    ViewBag.Title = "Random";
+}
+
+<h1>@Model.Movie.Name</h1>
+
+<table>
+    <thead>Customer</thead>
+
+    @foreach (var customer in Model.Customers)
+    {
+        <tr>
+          
+                @customer.Name
+        
+        </tr>
+    }
+
+</table>

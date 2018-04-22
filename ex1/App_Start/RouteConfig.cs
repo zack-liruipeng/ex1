@@ -13,6 +13,16 @@ namespace ex1
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            routes.MapMvcAttributeRoutes();
+
+//            routes.MapRoute(
+//               name: "MoviesByReleaseDate",
+//             url: "movies/released/{year}/{month}",
+//                defaults: new { controller = "Movies", action = "ByReleaseDate" },
+                //添加了regular expression，限定了url地址,这是constraints
+//                constraints: new {year = @"\d{4}", month = @"\d{2}"}
+ //           );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

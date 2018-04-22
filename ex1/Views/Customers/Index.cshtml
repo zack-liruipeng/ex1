@@ -1,0 +1,27 @@
+﻿@model IEnumerable<ex1.Models.Customer>
+
+@{
+    ViewBag.Title = "Customer";
+}
+
+<h2>Customer Name</h2>
+
+<table class="table table-bordered table-hover">
+    <thead> <tr> 
+            <th>Customers</th>
+            <th>Membership Type</th>
+            </tr>
+    </thead>
+    <tbody>
+      @foreach (var customer in Model)
+      {
+        <tr>
+            <td>@customer.Name</td>
+            <td>@customer.MembershipType.Name</td>
+        </tr>
+      }
+    </tbody>
+</table>
+
+
+

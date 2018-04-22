@@ -29,5 +29,7 @@ namespace ex1.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ex1.Models.Customer> Customers { get; set; }
     }
 }
