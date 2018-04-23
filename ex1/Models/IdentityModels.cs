@@ -31,5 +31,7 @@ namespace ex1.Models
         }
 
         public System.Data.Entity.DbSet<ex1.Models.Customer> Customers { get; set; }
+        public System.Data.Entity.DbSet<ex1.Models.Movie> Movies { get; set; }
+        public System.Data.Entity.DbSet<ex1.Models.MembershipType> MembershipType { get; set; }
     }
 }

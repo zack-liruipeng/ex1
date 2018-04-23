@@ -50,19 +50,23 @@ namespace ex1
             //    clientId: "",
             //    clientSecret: "");
 
-            //app.UseTwitterAuthentication(
-            //   consumerKey: "",
-            //   consumerSecret: "");
+        //    app.UseTwitterAuthentication
+        //    (
+        //      consumerKey: "",
+        //      consumerSecret: ""
+        //    );
 
-            //app.UseFacebookAuthentication(
-            //   appId: "",
-            //   appSecret: "");
+        //    app.UseFacebookAuthentication
+        //    (
+        //      appId: "",
+         //     appSecret: ""
+         //    );
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+           {
+               ClientId = "82493282055-mohalglfheef7vgrdp2c90kh1qcqbf80.apps.googleusercontent.com",
+               ClientSecret = "djDPwaR7OS5LZLk7Yhhp9kf_"
+            });
         }
     }
 }
